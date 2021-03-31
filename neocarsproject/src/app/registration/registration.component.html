@@ -1,0 +1,39 @@
+<div fxLayoutAlign="center center" fxFlexfill class="main-div">
+    <mat-card fxFlex="35">
+        <mat-toolbar fxLayoutAlign="center center">SIGN UP</mat-toolbar>
+    <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+    <mat-form-field>
+        <input matInput  placeholder="Enter Email" id="email">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput  type="password" placeholder="Enter Password" id="password">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput  placeholder="Enter Mobile Number" id="mobilenumber">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>User</mat-label>
+        <mat-select>
+          <mat-option value="null"></mat-option>
+          <mat-option value="Super Admin">Super Admin</mat-option>
+          <mat-option value="Admin">Admin</mat-option>
+          <mat-option value="Customer">Customer</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+    <mat-form-field>
+        <input matInput  placeholder="Enter User Name" id="username">
+    </mat-form-field>
+          <mat-form-field>
+                <input matInput  placeholder="Enter Age" id="age">
+        </mat-form-field>
+            <button mat-raised-button type="submit" class="sub" id="submitButton" >Submit</button>
+            <div fxLayoutAlign="row" class="here">
+            <p>Go to Login</p>
+
+            <a href="#" id="loginLink" class="log" (click)="handleClick">Click Here</a>
+        </div>
+          </form>
+    </mat-card>
+</div>
+

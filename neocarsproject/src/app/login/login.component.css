@@ -1,0 +1,14 @@
+.main-div mat-card{
+    padding:0px;
+    margin-top: 10%;
+}
+.sub{
+    background-color: blue;
+    width: 80%;
+    margin-left: 8%;
+    
+}
+.here{
+    margin-top: 5px;
+    margin-left: 30%;
+}

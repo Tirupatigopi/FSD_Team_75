@@ -1,0 +1,44 @@
+.a{
+    background-color: blue;
+    margin-top: 10px;
+    
+}
+.tool{
+    width: 17%;
+    margin-left: 8%;
+    margin-top: 5px;
+    background-color: red;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.toolbar{
+    width: 87%;
+    margin-left: 8%;
+    height: 15%;
+}
+.tol{
+    width: 17%;
+    margin-left: 8%;
+    background-color: green;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 1%;  
+}
+.toolba{
+    width: 87%;
+    margin-left: 8%;
+    height: 15%; 
+}
+.tl{
+    width: 17%;
+    margin-left: 8%;
+    background-color:red;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 1%;   
+}
+.toolb{
+    width: 87%;
+    margin-left: 8%;
+    height: 15%;  
+}

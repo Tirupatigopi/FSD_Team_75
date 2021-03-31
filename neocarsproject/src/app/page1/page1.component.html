@@ -1,0 +1,23 @@
+<div  fxLayoutAlign="center center" fxflexfill>
+    <mat-card fxFlex="25" style="margin-top: 10%;">
+        <div fxLayout="row">
+        <mat-toolbar>User</mat-toolbar>
+        <mat-toolbar>Admin</mat-toolbar>
+    </div>
+    <mat-toolbar fxLayoutAlign="center center">LOGIN</mat-toolbar>
+    <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+    <mat-form-field>
+        <input matInput  placeholder="Enter User Name" id="email">
+    </mat-form-field>
+          <mat-form-field>
+                <input matInput type="password" placeholder="Enter Password" id="password">
+        </mat-form-field>
+            <button mat-raised-button type="submit" class="sub" id="submitButton">Submit</button>
+            <div fxLayoutAlign="row" class="here">
+            <p style="margin-left: 25%;">New to Booking?</p>
+            <a href="#" style="margin-left: 1%; color: royalblue;">Click here</a>
+        </div>
+          </form>
+    </mat-card>
+</div>
+

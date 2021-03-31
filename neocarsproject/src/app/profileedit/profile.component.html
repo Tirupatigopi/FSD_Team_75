@@ -1,0 +1,42 @@
+<div fxLayoutAlign="center center" fxflexfill class="main-div" fxLayoutAlign="row">
+    <mat-card fxFlex="90" class="a">
+        <div>
+            <a href="#"fxLayoutAlign="row" id="userNavbar">
+                <h3 style="color: white;"><strong>Neo Cars</strong></h3>
+                <p style="color: whitesmoke; margin-left: 5%; margin-top: 3px;">Dashboard</p>
+                <p style="color: thistle; margin-left: 3%; margin-top: 3px;">Profile</p>
+                <p style="color: thistle; margin-left: 3%; margin-top: 3px;">My Booking</p>
+                <p style="color: thistle; margin-left: 65%;">Logout</p>
+
+            </a>
+        </div>
+    </mat-card>
+</div>
+        <mat-toolbar style="margin-left: 30%; width: 35%; height: 88%;">
+            <form fxFlex="40" fxLayout="column" style="margin-left: 10%; padding: 0px;">
+                <mat-toolbar-row>
+                <mat-icon style="margin-right: 1px;">arrow_back_ios</mat-icon>
+                <p style="margin-top: 10px;">back</p>
+                </mat-toolbar-row>
+                <mat-form-field style="margin-top: 0.5px;">
+                    <input matInput placeholder="Name" value="Seller 1" id="adminName">
+                </mat-form-field>
+                <mat-form-field style="margin-top: 0%;">
+                    <input matInput placeholder="Email" value="seller01@iamneo.ai" id="adminEmail">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput  placeholder="Mobile Number" value="9876543210" id="adminMobilenumber">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput  placeholder="Password" value="iamneo" id="adminPassword">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput  placeholder="Company Name" value="Examly" id="companyName">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput  placeholder="Company Address" value="1/7A,Area,Locality,District,pincode" id="companyAddress">
+                </mat-form-field>
+                        <button mat-raised-button type="submit" class="sub" id="editProfileButton" >
+                            Save Changes</button>
+                      </form>
+        </mat-toolbar>
