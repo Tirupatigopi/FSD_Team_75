@@ -1,10 +1,12 @@
 <div  fxLayoutAlign="center center" fxflexfill>
     <mat-card fxFlex="25" style="margin-top: 10%;">
-        <div fxLayout="row">
-        <mat-toolbar>User</mat-toolbar>
-        <mat-toolbar>Admin</mat-toolbar>
-    </div>
-    <mat-toolbar fxLayoutAlign="center center">LOGIN</mat-toolbar>
+        <mat-toolbar fxLayout="column">
+            <div fxLayout="row" style="margin-top: 5px;">
+            <h1 style="padding-right: 8rem;">User</h1>
+            <mat-toolbar style="height:30px; background-color: white; width: 35%; margin-left: 8%;">
+            <h1 style="padding-left: 0.5rem;">Admin</h1>
+        </mat-toolbar>
+            </div>LOGIN</mat-toolbar>
     <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
     <mat-form-field>
         <input matInput  placeholder="Enter User Name" id="email">

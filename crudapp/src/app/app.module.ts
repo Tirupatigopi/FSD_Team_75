@@ -30,8 +30,8 @@ import { AdminComponent } from './admin/admin.component';
 import { SuperbookingComponent } from './superbooking/superbooking.component';
 import { DetailsComponent } from './details/details.component';
 import { CompanyComponent } from './company/company.component';
-import { UserprofileComponent } from './userprofile/userprofile.component'
-
+import { UserprofileComponent } from './userprofile/userprofile.component';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,BookingComponent,DashboardComponent,EditComponent,Page1Component,RegistrationComponent,
@@ -45,7 +45,7 @@ import { UserprofileComponent } from './userprofile/userprofile.component'
     MatFormFieldModule,
     MatInputModule,MatPaginatorModule,MatSelectModule,
     MatButtonModule,
-    MatCardModule,
+    MatCardModule,HttpClientModule,
     MatToolbarModule,MatIconModule,
     BrowserAnimationsModule
   ],
