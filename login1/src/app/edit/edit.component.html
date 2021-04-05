@@ -1,0 +1,34 @@
+<div fxLayoutAlign="center center" fxflexfill class="main-div" fxLayoutAlign="column">
+    <mat-card fxFlex="90" class="a" id="userNavbar">
+        <div style="margin-top: 10px; width: 200%;" fxLayout="row">
+                <h2 style="color: white;">Neo Cars</h2>
+                <button mat-button style="color: whitesmoke; margin-left: 5%; margin-bottom: 0.5%;"routerLink="/page">Dashboard</button>
+                <button mat-button style="color: thistle; margin-left: 3%; margin-bottom: 0.5%;" routerLink="/edit">Profile</button>
+                <button mat-button style="color: thistle; margin-left: 3%; margin-bottom: 0.5%;" routerLink="/user">My Booking</button>
+                <button mat-button style="color: thistle; margin-left: 20%; margin-bottom: 0.5%;" routerLink="/login">Logout</button>
+        </div>
+    </mat-card>
+    
+
+</div> 
+<mat-toolbar-row id="userProfileBody">
+    <mat-toolbar style="margin-top: 30%;width: 55%; margin-left: 7%; height: 650%;">
+        <form style="margin-bottom: 15%; margin-left: 7%; margin-top: 16%;">
+            <p>Name : Jannifer Aniston</p><br>
+            <p>Email : rachelgreen@iamneo.ai</p><br>
+            <div fxLayout="row">
+            <p>Password : *******************</p>
+            <mat-icon style="margin-left: 7%;">visibility</mat-icon>
+        </div><br>
+            <p>Age : 27</p><br>
+            <p>Mobile Number : 1234567890</p>
+        </form>
+    </mat-toolbar>
+    
+    <mat-toolbar style="width: 25%; margin-left: 8%; height: 800%; margin-top: 30%;">
+        <div fxLayoutAlign="center " fxLayout="column" style="margin-left: 20%; margin-bottom: 70%;">
+        <img src="../../assets/5.jpg" style="border-radius: 50%; margin-top: 20%;">
+        <button mat-raised-button type="edit profile" class="btn" routerLink="/userprofile">Edit Profile</button>
+    </div>
+    </mat-toolbar>
+    </mat-toolbar-row>

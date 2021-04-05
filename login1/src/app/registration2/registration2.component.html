@@ -1,0 +1,42 @@
+<div  fxFlexfill class="main-div" style="margin-top: 0px;" fxLayoutAlign="center" 
+style="background-image: url(../../assets/7.jpg); height: 100%; margin-top: 0px;">
+    <mat-card fxFlex="35" id="signupBox">
+        <mat-toolbar fxLayoutAlign="center center">SIGN UP</mat-toolbar>
+    <form [formGroup]= "registrationForm" fxLayoutAlign="stretch" fxLayout="column" class="login-form" #userForm="ngForm">
+    <mat-form-field>
+        <input formControlName="email" matInput  placeholder="Enter Email" id="email" required ngModel>
+    </mat-form-field>
+    <mat-form-field>
+        <input formControlName="password" matInput  type="password" placeholder="Enter Password" id="password" required ngModel>
+    </mat-form-field>
+    <mat-form-field>
+        <input formControlName="mobilenumber" matInput  placeholder="Enter Mobile Number" id="mobilenumber" required ngModel>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Admin</mat-label>
+        <mat-select formControlName="admin" id="userrole">
+            <mat-option value="null"></mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+    <mat-form-field>
+        <input formControlName="sellername" matInput  placeholder="Enter Seller Name" id="adminname" required ngModel>
+    </mat-form-field>
+          <mat-form-field>
+                <input formControlName="companyname" matInput  placeholder="Enter Company Name" id="companyname" required ngModel>
+        </mat-form-field>
+        <mat-form-field>
+            <input formControlName="companyaddress" matInput  placeholder="Enter Company Image Url" id="companyimageURL" required ngModel>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput  placeholder="Enter Company Address" id="companyaddress" required ngModel>
+</mat-form-field>
+            <button [disabled]="registrationForm.invalid" mat-raised-button type="submit" class="sub" id="submitButton" >Submit</button>
+            <div fxLayoutAlign="row" class="here">
+            <p>Go to Login</p>
+
+            <a routerLink="/page1" id="adminLoginLink">Click Here</a>
+        </div>
+          </form>
+    </mat-card>
+</div>

@@ -1,0 +1,25 @@
+<div fxLayoutAlign="center center" fxflexfill class="main-div" style="background-image: url(../../assets/6.jpg); height: 100%;">
+    <mat-card fxFlex="25" id="loginBox">
+        <mat-toolbar fxLayout="column">
+            <div fxLayout="row" style="margin-top: 5px;">
+                <mat-toolbar style="height:30px;">
+                    <button mat-button style="padding-right: 11rem; background-color: white; width: 30%;" id="userTab" routerLink="/login">User</button>
+                </mat-toolbar>
+                <button mat-button style="padding-left: 1rem;" id="adminTab" routerLink="/page1">Admin</button>
+            </div><h2>LOGIN</h2>
+        </mat-toolbar>
+        <form [formGroup] = "loginForm" fxLayoutAlign="stretch" fxLayout="column" #userForm="ngForm">
+            <mat-form-field>
+                <input class="user" formControlName="email" matInput placeholder="Enter User Name" id="email" required ngModel>
+            </mat-form-field>
+            <mat-form-field>
+                <input class="user" formControlName="password" matInput type="password" placeholder="Enter Password" id="password" required ngModel>
+            </mat-form-field>
+            <button [disabled] = "loginForm.invalid" mat-raised-button class="sub" id="submitButton" routerLink="/page">Submit</button>
+            <div fxLayoutAlign="row" class="here">
+                <p>New to Booking?</p>
+               <a routerLink="/registration" id="userSignupLink">Click here</a>
+            </div>
+        </form>
+    </mat-card>
+</div>

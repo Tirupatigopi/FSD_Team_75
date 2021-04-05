@@ -1,0 +1,98 @@
+<div fxLayoutAlign="center center" fxflexfill class="main-div">
+    <mat-card fxFlex="90" class="a" id="adminNavbar">
+        <div fxLayoutAlign="row">
+            
+                <h2 style="color: white; margin-top: 1%; margin-left: 1%;">Neo Cars</h2>
+            <div fxLayoutAlign="row" style="margin-left: 7%; margin-top: 1.3%;">
+                <mat-icon style="color: whitesmoke;">space_dashboard</mat-icon>
+                <button style="color: thistle; margin-left: 5%; margin-top: 1.5%; height: 55%;" routerLink="/dashboard">Dashboard</button>
+            </div>
+            <div fxLayoutAlign="row"  style="margin-left: 5%; margin-top: 1.3%;">
+                <mat-icon style="color: grey;">account_circle</mat-icon>                
+                <button style="color: thistle; margin-left: 3%; margin-top: 1.5%;height: 55%;" routerLink="/admpage">Profile</button>
+            </div>
+            <div fxLayoutAlign="row"  style="margin-left: 5%; margin-top: 1.3%;">
+                <mat-icon style="color: grey;">receipt_long</mat-icon>     
+                <button style="color: thistle; margin-left: 3%; margin-top: 1.5%; height: 55%;" routerLink="/booking">MyBooking</button>
+            </div>
+
+                <button style="color: thistle; margin-left: 45%; margin-top: 1.3%; height: 2%;" routerLink="/page1">Logout</button>
+
+        
+        </div>
+    </mat-card>
+    
+</div>
+<div fxLayout="row" id="adminDashboard">
+    <div style="width: 150%; margin-left: 3%;">
+<h1 style="margin-top: 1%; font-size: 2rem; margin-left: 27%; font-style: italic;">Car Company Name</h1>
+<mat-toolbar class="tool">
+    <p style="color: white; padding: 27px; margin-top: 6%;">Booked</p>
+</mat-toolbar>
+<mat-toolbar class="toolbar">
+    <div>
+        <p>Car Model : Suzuki Baleno</p>
+        <p>Price : $200 | per day</p>
+    </div>
+    <p style="margin-left: 15%;">Type : Sedan</p>
+   <mat-icon style="margin-left: 17.5%; margin-bottom: 1%; 
+   background-color: gold; width: 6%; border-radius: 25%; color: white;" fxLayoutAlign="center">edit</mat-icon>
+   <mat-icon style="margin-left: 5.5%; margin-bottom: 1%; background-color: red; width: 6%; 
+   border-radius: 25%; color: white;"
+   fxLayoutAlign="center">delete</mat-icon>
+</mat-toolbar>
+
+<mat-toolbar class="tol">
+    <p style="color: white; padding: 25px; margin-top: 6%; ">Available</p>
+</mat-toolbar>
+<mat-toolbar class="toolba">
+    <div>
+        <p>Car Model : Renault KWID</p>
+        <p>Price : $500 | per day</p>
+    </div>
+    <p style="margin-left: 17%;">Type : Mini</p>
+   <mat-icon style="margin-left: 18.5%; margin-bottom: 1%; 
+   background-color: gold; width: 6%; border-radius: 25%; color: white;" fxLayoutAlign="center">edit</mat-icon>
+   <mat-icon style="margin-left: 6%; margin-bottom: 1%; background-color: red; width: 6%; 
+   border-radius: 25%; color: white;"
+   fxLayoutAlign="center">delete</mat-icon>
+</mat-toolbar>
+
+<mat-toolbar class="tl">
+    <p style="color: white; padding: 27px; margin-top: 6%;">Booked</p>
+</mat-toolbar>
+<mat-toolbar class="toolb">
+    <div>
+        <p>Car Model : Renault Tribber</p>
+        <p>Price : $250 | per day</p>
+    </div>
+    <p style="margin-left: 15%;">Type : Sedan</p>
+   <mat-icon style="margin-left: 17%; margin-bottom: 1%; 
+   background-color: gold; width: 6%; border-radius: 25%; color: white;" fxLayoutAlign="center">edit</mat-icon>
+   <mat-icon style="margin-left: 6%; margin-bottom: 1%; background-color: red; width: 6%; 
+   border-radius: 25%; color: white;"
+   fxLayoutAlign="center">delete</mat-icon>
+</mat-toolbar>
+</div>
+<div style="margin-right: 7%; margin-top: 1%; width: 55%;">
+<mat-toolbar style="height: 60%;">
+    <form style="margin-left: 10%;">
+       <p style="margin-left: 28%;">Earnings</p><br>
+       <p style="margin-left: 28%;">Total Today</p>
+       <p style="margin-left: 40%;">$200</p>
+       <p>__________________________</p>
+       <p style="margin-left: 34%;">Monthly</p>
+       <p style="margin-left: 41%;">$700</p>
+   </form>
+</mat-toolbar>
+<mat-toolbar style="width: 100%; margin-top: 10%; height: 32%;">
+    <form style="margin-left: 15%;">
+       <p>Want to add a New Car</p>
+       <button mat-raised-button type="add car" style="margin-left: 1%; width: 115%; 
+       background-color: gold; border-radius: 15%; color: white;" routerLink="/caradmin" id="addCarButton">
+       <mat-icon style="margin-right: 5%;">add_circle_outline</mat-icon>Add Car</button>
+    </form>
+</mat-toolbar>
+</div>
+</div>
+

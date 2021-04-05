@@ -1,0 +1,40 @@
+<div fxLayoutAlign="center center" fxFlexfill class="main-div" 
+style="background-image: url(../../assets/7.jpg); height: 100%; margin-top: 0px;">
+    <mat-card fxFlex="35" id="signupBox">
+        <mat-toolbar fxLayoutAlign="center center">SIGN UP</mat-toolbar>
+    <form [formGroup] = "registrationForm" fxLayoutAlign="stretch" fxLayout="column" class="login-form" #userForm="ngForm">
+    <mat-form-field>
+        <input formControlName="email" matInput  placeholder="Enter Email" id="email" required ngModel>
+    </mat-form-field>
+    <mat-form-field>
+        <input formControlName="password" matInput  type="password" placeholder="Enter Password" id="password" required ngModel>
+    </mat-form-field>
+    <mat-form-field>
+        <input formControlName="mobilenumber" matInput  placeholder="Enter Mobile Number" id="mobilenumber" required ngModel>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label id="userrole">User</mat-label>
+        <mat-select formControlName="user">
+          <mat-option value="null"></mat-option>
+          <mat-option value="Super Admin">Super Admin</mat-option>
+          <mat-option value="Admin">Admin</mat-option>
+          <mat-option value="Customer">Customer</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+    <mat-form-field>
+        <input formControlName="username" matInput  placeholder="Enter User Name" id="username" required ngModel>
+    </mat-form-field>
+          <mat-form-field>
+                <input formControlName="age" matInput  placeholder="Enter Age" id="age" required ngModel>
+        </mat-form-field>
+            <button [disabled]="registrationForm.invalid" mat-raised-button type="submit" class="sub" id="submitButton" >Submit</button>
+            <div fxLayoutAlign="row" class="here">
+            <p>Go to Login</p>
+
+            <a routerLink="/" id="loginLink" class="log">Click Here</a>
+        </div>
+          </form>
+    </mat-card>
+</div>
+

@@ -1,0 +1,31 @@
+<div fxLayoutAlign="center center" fxflexfill class="main-div" fxLayoutAlign="column">
+    <mat-card fxFlex="90" class="a" id="adminNavbar">
+        <div style="margin-top: 10px; width: 200%;" fxLayout="row">
+                <h2 style="color: white;">Neo Cars</h2>
+                <button mat-button style="color: whitesmoke; margin-left: 5%; margin-bottom: 0.5%;" routerLink="/dashboard">Dashboard</button>
+                <button mat-button style="color: thistle; margin-left: 3%; margin-bottom: 0.5%;" routerLink="/admpage">Profile</button>
+                <button mat-button style="color: thistle; margin-left: 3%; margin-bottom: 0.5%;" routerLink="/booking">My Booking</button>
+                <button mat-button style="color: thistle; margin-left: 20%; margin-bottom: 0.5%;" routerLink="/page1">Logout</button>
+        </div>
+    </mat-card>
+    
+
+</div>
+        <mat-toolbar style="margin-top: 5%; margin-left: 30%; width: 35%; height: 65%;" id="addCarBox">
+            <form fxFlex="40" fxLayout="column" style="margin-left: 10%; padding: 0px;">
+                <mat-toolbar-row>
+                <mat-icon style="margin-right: 5px;">arrow_back_ios</mat-icon>
+                <p style="margin-top: 10px;">back</p>
+                </mat-toolbar-row>
+                <mat-form-field style="margin-top: 15px;">
+                    <input matInput placeholder="Car Model"id="carModel">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Car Rent Price"id="carPrice">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput  placeholder="Car Type"id="carType">
+                </mat-form-field>
+                        <button mat-raised-button type="add car" class="sub" id="addCarButton" routerLink="/editcar">Add Car</button>
+                      </form>
+        </mat-toolbar>

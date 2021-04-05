@@ -1,0 +1,12 @@
+.a{
+    background-color: blue;
+    margin-top: 15px;
+    margin-left: 5%;
+}
+.icon{
+    background-color: red; 
+    margin-left: 5%; 
+    width: 5%; 
+    color: white;
+    border-radius: 20%;
+}

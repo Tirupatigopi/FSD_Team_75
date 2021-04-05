@@ -1,0 +1,39 @@
+<div fxLayoutAlign="center center" fxflexfill class="main-div" fxLayoutAlign="column">
+    <mat-card fxFlex="90" class="a" id="userNavbar">
+        <div style="margin-top: 10px; width: 200%;" fxLayout="row">
+                <h2 style="color: white;">Neo Cars</h2>
+                <button mat-button style="color: whitesmoke; margin-left: 5%; margin-bottom: 0.5%;" routerLink="/page">Dashboard</button>
+                <button mat-button style="color: thistle; margin-left: 3%; margin-bottom: 0.5%;" routerLink="/edit">Profile</button>
+                <button mat-button style="color: thistle; margin-left: 3%; margin-bottom: 0.5%;" routerLink="/user">My Booking</button>
+                <button mat-button style="color: thistle; margin-left: 20%; margin-bottom: 0.5%;" routerLink="/">Logout</button>
+        </div>
+    </mat-card>
+    
+
+
+</div>
+        <mat-toolbar style="margin-top: 15px; margin-left: 30%; width: 35%; height: 82%;" id="editProfileBox">
+            <form fxFlex="40" fxLayout="column" style="margin-left: 10%; padding: 0px;">
+                <mat-toolbar-row>
+                <mat-icon style="margin-right: 1px;">arrow_back_ios</mat-icon>
+                <p style="margin-top: 10px;">back</p>
+                </mat-toolbar-row>
+                <mat-form-field style="margin-top: 15px;">
+                    <input matInput placeholder="Name" value="Jennifer Aniston" id="username">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Email" value="rachelgreen@iamneo.ai" id="email">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput  placeholder="Password" value="Joey Tribbiani" id="password">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput  placeholder="Age" value="27" id="userage">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput  placeholder="Mobile Number" value="1234567890" id="mobilenumber">
+                </mat-form-field>
+                        <button mat-raised-button type="submit" class="sub" id="editProfileButton">Save Changes</button>
+                      </form>
+        </mat-toolbar>
+    
